@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body {
+    background: #ef333333;
+    
+}
+
+.container {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.gameName{
+    background: linear-gradient(rgb(221, 98, 98), #333);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    cursor:default;
+    
+}
+.gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 3rem auto;
+    
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #ba343496;
+    cursor: pointer;
+    line-height: 100px;
+}
+
+#cell-0, #cell-1, #cell-2 {
+    border-top: none;
+  }
+  
+  #cell-0, #cell-3, #cell-6 {
+    border-left: none;
+  }
+  
+  #cell-6, #cell-7, #cell-8 {
+    border-bottom: none;
+  }
+  
+  #cell-2, #cell-5, #cell-8 {
+    border-right: none;
+  }
+
+.restartBtn{
+    width: 12rem;
+    height: 3.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    font-weight:700;
+    background: #ba343496; 
+    text-align: center;
+    cursor: pointer;
+}
+.restartBtn:hover{
+    background: -webkit-linear-gradient(rgb(221, 98, 98), rgb(104, 16, 16));
+    width: 15rem;
+    height: 4rem;
+}
+/* media query for Laptop */
+/* @media only screen and(min-width: 1024px){
+    .container {
+        margin-top: 3rem;
+    }
+} */
