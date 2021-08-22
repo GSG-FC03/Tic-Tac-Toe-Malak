@@ -3,7 +3,7 @@ const gameBoard = document.querySelector(".gameBoard");
 const status = document.querySelector(".gameStatus");
 const userMark = document.getElementById("userScore");
 const computerMark = document.getElementById("computerScore");
-const round = document.querySelector(".round");
+// const round = document.querySelector(".round");
 const imgResult = document.getElementById("imgResult");
 const showImg = document.querySelector(".showImg");
 const player = "X";
@@ -12,7 +12,7 @@ let board = ["", "", "", "", "", "", "", "", ""];
 let completedBoard = false;
 let userScore = 0;
 let computerScore = 0;
-let rounds = 0;
+// let rounds = 0;
 
 //function ta add sound once the player click on the chosen cell 
 function playClick() {
@@ -182,10 +182,9 @@ const restartBoard = () => {
     completedBoard = false;
     userScore=0;
     computerScore= 0;
-    rounds=0;
+    // rounds=0;
     userMark.innerHTML= userScore;
     computerMark.innerHTML= computerScore;
-    //   round.innerHTML = rounds;
     status.innerText = "";
      renderBoard();
     };
