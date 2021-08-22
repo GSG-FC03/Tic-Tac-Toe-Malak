@@ -8,7 +8,7 @@ body {
 }
 
 .container {
-    margin-top: 7rem;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,32 +28,17 @@ body {
     grid-template-columns: repeat(3, auto);
     width: 306px;
     margin: 3rem auto;
-    
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 3rem;
 }
 .cell {
     width: 100px;
     height: 100px;
     border: 3px solid #ba343496;
     cursor: pointer;
-    line-height: 100px;
+    line-height: 80px;
 }
-
-#cell-0, #cell-1, #cell-2 {
-    border-top: none;
-  }
-  
-  #cell-0, #cell-3, #cell-6 {
-    border-left: none;
-  }
-  
-  #cell-6, #cell-7, #cell-8 {
-    border-bottom: none;
-  }
-  
-  #cell-2, #cell-5, #cell-8 {
-    border-right: none;
-  }
-
 .restartBtn{
     width: 12rem;
     height: 3.5rem;
@@ -69,10 +54,39 @@ body {
     background: -webkit-linear-gradient(rgb(221, 98, 98), rgb(104, 16, 16));
     width: 15rem;
     height: 4rem;
+
 }
-/* media query for Laptop */
-/* @media only screen and(min-width: 1024px){
-    .container {
-        margin-top: 3rem;
-    }
-} */
+ .content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+    align-items: center;
+    padding-left: 5rem;
+    font-weight: 600;
+    cursor:default;
+    margin-bottom: 1rem;
+ }
+ .player, .computer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+ .showImg{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 1rem;
+    text-align: center;
+ }
+#imgResult{
+    height:50%;
+    width:50%;
+    margin: 4rem;
+ 
+}
+.gameStatus{
+    text-shadow: 2px 2px 5px red;
+    margin-bottom: 1rem;
+    text-align: center;
+
+}

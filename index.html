@@ -2,17 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tic Tac Toe Game</title>
-    <!-- linking style.css -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" href="/assets/xo.jpg" type="image">
   </head>
-  <body>
-    <!-- section contains headings for game name and game status,
-         game board with 9 cells and restart button -->
+  <body>  
+     <main>
+    <!-- section contains headings for game name and game status, game board with 9 cells and restart button -->
     <section class="container">
-      <h1 class="gameName">Tic Tac Toe</h1>
+        <h1 class="gameName">Tic Tac Toe</h1>
       <div class="gameBoard">
         <div id="cell-0" class="cell"></div>
         <div id="cell-1" class="cell"></div>
@@ -24,10 +27,23 @@
         <div id="cell-7" class="cell"></div>
         <div id="cell-8" class="cell"></div>
       </div>
+      <div class="content">
+        <!-- <p class="rounds">
+            <span>Rounds</span>
+            <span class="round">0</span>
+        </p> -->
+      <p class="player" ><span class="p">Player(x)</span><span id="userScore">0</span></p>
+      <p class = "computer"><span class ="c">Computer(o)</span><span id="computerScore">0</span></p>
+    </div>
       <h2 class="gameStatus"></h2>
       <button class="restartBtn" onclick="restartBoard()">Restart Game</button>
+
+      <div class="showImg">
+            <div id="imgResult"></div>
+    </div>
     </section>
     <!-- section ends -->
+</main>
     <script src="/javaScript/script.js"></script>
   </body>
 </html>
